@@ -37,8 +37,8 @@ function createMainWindow(){
 function createAboutWindow(){
 	const aboutWindow = new BrowserWindow({
 		title: "About RealEdu",
-		width: 300,
-		height: 300
+		width: 400,
+		height: 350
 	});
 
 	aboutWindow.loadFile(path.join(__dirname, "./www/about.html"));
