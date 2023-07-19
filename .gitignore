@@ -16,4 +16,5 @@ build
 
 # Ignore private assets
 assets
+TESTING
 patch_goal.md
