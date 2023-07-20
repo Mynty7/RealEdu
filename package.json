@@ -8,8 +8,9 @@
 	"author": "realoss <realedu957@gmail.com>",
 	"main": "main.js",
 	"scripts": {
-		"pack": "electron-builder --dir",
-		"dist": "electron-builder"
+		"test": "electron .",
+		"dist": "electron-builder",
+		"pack": "electron-builder --dir"
 	},
 	"postinstall": "electron-builder install-app-deps",
 	"build": {

@@ -1,10 +1,12 @@
 var language = "en";
+
 //var edulevel = "menu1"
 // codebase requires reform
 function additionalmenu(){
 	document.getElementById("inilink2").style.display = "inline-block";
 	document.getElementById("inilink1").style.display = "none";
 }
+
 function opentab(a){
 	var i;
 	var x = document.getElementsByClassName("maintabs");
@@ -17,6 +19,7 @@ function opentab(a){
 	document.getElementById("inilink").style.display = "inline-block";
 	document.getElementById("frontboard").style.display = "none";
 }
+
 function aopentab(a){
 	var i;
 	var x = document.getElementsByClassName("maintabs");
