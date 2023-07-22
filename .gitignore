@@ -6,6 +6,7 @@ dist
 android
 capacitor.config.ts
 sdk
+.vscode
 #.commit
 
 # Ignore Gradle project-specific cache directory

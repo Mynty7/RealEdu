@@ -1,5 +1,5 @@
 const path = require("path");
-const {app, BrowserWindow, Menu} = require("electron");
+const { app, BrowserWindow, Menu } = require("electron");
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -7,22 +7,22 @@ const isDev = process.env.NODE_ENV !== "production";
 //const isGNU = process.platform === "linux";
 const isMac = process.platform === "darwin";
 
-function createMainWindow(){
+function createMainWindow() {
 	const mainWindow = new BrowserWindow({
 		title: "RealEdu",
 		width: 850,
 		height: 600
 	});
-/*
-	if(isDev){
-		mainWindow.webContents.openDevTools();
-	}
-*/
+	/*
+		if(isDev){
+			mainWindow.webContents.openDevTools();
+		}
+	*/
 	mainWindow.loadFile(path.join(__dirname, "./www/index.html"));
 	const menu = [
 		{
-			label: "Quit",
-			click: app.quit
+			label: "Note",
+			click: createNoteWindow
 		},
 		{
 			label: "About",
@@ -34,7 +34,7 @@ function createMainWindow(){
 	Menu.setApplicationMenu(mainMenu);
 }
 
-function createAboutWindow(){
+function createAboutWindow() {
 	const aboutWindow = new BrowserWindow({
 		title: "About RealEdu",
 		width: 400,
@@ -43,19 +43,29 @@ function createAboutWindow(){
 
 	aboutWindow.loadFile(path.join(__dirname, "./www/about.html"));
 }
+function createNoteWindow() {
+	const noteWindow = new BrowserWindow({
+		title: "Notepad",
+		width: 400,
+		height: 600
+	});
+
+	noteWindow.loadFile(path.join(__dirname, "./www/realmemo.html"));
+	//noteWindow.webContents.openDevTools();
+}
 
 app.whenReady().then(() => {
 	createMainWindow();
 
 	app.on("activate", () => {
-		if(BrowserWindow.getAllWindows().length === 0) {
+		if (BrowserWindow.getAllWindows().length === 0) {
 			createMainWindow();
 		}
 	})
 });
 
 app.on("window-all-closed", () => {
-	if(!isMac){
+	if (!isMac) {
 		app.quit()
 	}
 })
