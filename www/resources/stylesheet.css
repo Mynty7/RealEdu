@@ -214,3 +214,6 @@ footer{
 .notes_list-item--selected{
 	background: var(--sec);
 }
+.notes_small-updated{
+	font-size: x-small;
+}
