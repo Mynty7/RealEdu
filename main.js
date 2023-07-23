@@ -21,7 +21,7 @@ function createMainWindow() {
 	mainWindow.loadFile(path.join(__dirname, "./www/index.html"));
 	const menu = [
 		{
-			label: "Note",
+			label: "RealEdu Memo",
 			click: createNoteWindow
 		},
 		{
