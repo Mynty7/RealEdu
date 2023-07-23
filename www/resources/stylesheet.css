@@ -7,6 +7,7 @@
 	--fsc: ;
 	--hvr: ;
 	--bgi: ;
+	--txt: ;
 }
 body{
 	transition-duration: 1s;
@@ -22,15 +23,17 @@ body{
 a:link, a:visited, a:hover, a:active{
 	text-decoration: none;
 }
-#frontboard{
-	font-size: 250%;
+#frontboard,.aboutfrontboard{
 	display: inline-block;
 	background: var(--prm);
 	border: none;
 	color: var(--fnt);
 	border-radius: 15px;
-	padding: 20px;
 	font-family: "Pacifico";
+}
+#frontboard{
+	font-size: 250%;
+	padding: 20px;
 }
 #inilink, #inilink1, #inilink2{
 	font-size: 200%;
@@ -176,31 +179,27 @@ footer{
 	background: var(--prm);
 	border: 1px solid white;
 	border-radius: 15px;
-	color: var(--fsc);
+	color: var(--fnt);
 	font-size: large;
 	font-family: inherit;
 }
 .notes_sidebar{
 	display: block;
 }
-.notes_title{
-	background: var(--hvr);
+.notes_title,.notes_body{
+	background: var(--txt);
 	border: 1.5px solid white;
 	border-radius: 10px;
 	font-family: inherit;
-	color: black;
+	color: var(--fnt);
+	width: 200px;
 	height: 25px;
 	display: block;
 	margin: 5px;
 }
 .notes_body{
-	background: var(--hvr);
-	border: 1.5px solid white;
-	border-radius: 10px;
-	color: black;
 	width: 400px;
 	height: 150px;
-	font-family: inherit;
 	font-size: large;
 }
 .notes_list-item{
@@ -210,10 +209,12 @@ footer{
 	display: inline-block;
 	margin: 5px;
 	background: var(--prm);
+	color: var(--fsc);
 }
 .notes_list-item--selected{
 	background: var(--sec);
 }
 .notes_small-updated{
 	font-size: x-small;
+	color: inherit;
 }

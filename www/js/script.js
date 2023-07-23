@@ -47,6 +47,7 @@ function purpl(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#ffffff");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
+	document.body.style.setProperty("--txt", "rgba(0,0,0,.4)");
 	document.body.style.setProperty("--bgi", "url('purpl.png')");
 	localStorage.setItem("theme", "purpl");
 }
@@ -56,6 +57,7 @@ function pynk(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#ffffff");
 	document.body.style.setProperty("--hvr", "#333333");
+	document.body.style.setProperty("--txt", "rgba(0,0,0,.4)");
 	document.body.style.setProperty("--bgi", "url('pynk.png')");
 	localStorage.setItem("theme", "pynk");
 }
@@ -65,6 +67,7 @@ function goldy(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#333333");
+	document.body.style.setProperty("--txt", "rgba(0,0,0,.4)");
 	document.body.style.setProperty("--bgi", "url('goldy.png')");
 	localStorage.setItem("theme", "goldy");
 }
@@ -74,6 +77,7 @@ function mynt(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
+	document.body.style.setProperty("--txt", "rgba(0,0,0,.4)");
 	document.body.style.setProperty("--bgi", "url('mynt.png')");
 	localStorage.setItem("theme", "mynt");
 }
