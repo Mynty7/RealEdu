@@ -46,7 +46,7 @@ function createAboutWindow() {
 function createNoteWindow() {
 	const noteWindow = new BrowserWindow({
 		title: "Notepad",
-		width: 400,
+		width: 450,
 		height: 600
 	});
 

@@ -209,10 +209,11 @@ footer{
 	display: inline-block;
 	margin: 5px;
 	background: var(--prm);
-	color: var(--fsc);
+	color: var(--fnt);
 }
 .notes_list-item--selected{
 	background: var(--sec);
+	color: var(--fsc);
 }
 .notes_small-updated{
 	font-size: x-small;
