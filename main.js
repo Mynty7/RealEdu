@@ -21,13 +21,22 @@ function createMainWindow() {
 	mainWindow.loadFile(path.join(__dirname, "./www/index.html"));
 	const menu = [
 		{
+			label: "RealEdu",
+			click: createMainWindow
+		},
+		{
 			label: "RealEdu Memo",
 			click: createNoteWindow
 		},
 		{
 			label: "About",
 			click: createAboutWindow
+		},
+		{
+			label: "Quit",
+			click: app.quit
 		}
+		
 	]
 	//sets the menu
 	const mainMenu = Menu.buildFromTemplate(menu);
