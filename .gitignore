@@ -5,9 +5,11 @@ node_modules
 dist
 android
 capacitor.config.ts
+package-lock.json
 sdk
 .vscode
 #.commit
+.vscode
 
 # Ignore Gradle project-specific cache directory
 .gradle
