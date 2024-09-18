@@ -21,12 +21,12 @@ function createMainWindow() {
 	mainWindow.loadFile(path.join(__dirname, "./www/index.html"));
 	const menu = [
 		{
-			label: "RealEdu",
-			click: createMainWindow
-		},
-		{
 			label: "RealEdu Memo",
 			click: createNoteWindow
+		},
+		{
+			label: "Pomodoro",
+			click: createTimerWindow
 		},
 		{
 			label: "About",
@@ -59,8 +59,18 @@ function createNoteWindow() {
 		height: 600
 	});
 
-	noteWindow.loadFile(path.join(__dirname, "./www/realmemo.html"));
+	noteWindow.loadFile(path.join(__dirname, "./www/memo.html"));
 	//noteWindow.webContents.openDevTools();
+}
+
+function createTimerWindow() {
+	const timerWindow = new BrowserWindow({
+		title: "Pomodoro",
+		width: 750,
+		height: 500
+	});
+
+	timerWindow.loadFile(path.join(__dirname, "./www/timer.html"));
 }
 
 app.whenReady().then(() => {

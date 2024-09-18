@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" dir="ltr">
+		<meta name="author" content="Arif & Asyraf">
+		<meta name="title" content="RealEdu">
+		<meta name="description" content="RealEdu is a website to unify education">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>RealEdu</title>
+		<link rel="stylesheet" href="./resources/stylesheet.css">
+		<link rel="shortcut icon" href="./resources/favicon.png">
+	</head>
+	<body onload="console.log(localStorage.getItem('openmenu')); testopen()">
+		<script src="script.js"></script>
+		<script src="js/timer.js"></script>
+		<header>
+			<div class="more">
+				<button id="frontboard" onclick="location.reload();" type="button"> RealEdu </button>
+				<button id="inilink" onclick="localStorage.setItem('openmenu', 0); location.reload();" type="button" style="font-family: Balsamiq Sans;display:none;"> &lt; </button>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="pomodoro">
+				<h1 id="rtdisp">
+					Pomodoro Timer
+				</h1>
+				<button class="timerbuttons" id="rtWork" onclick="startTimer(25, 0, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest');" style="display: inline-block;">Study (25 min)</button>
+				<div class="timerbuttons" id="pWork" style="display: none;">Studying...</div>
+				<button class="timerbuttons" id="rtRest" onclick="startTimer(5, 0, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork');" style="display: none;">Rest (5 min)</button>
+				<div class="timerbuttons" id="pRest" style="display: none;">Resting...</div>
+			</div>
+		</div>
+		<div class="container">
+			<footer>
+				Copyright 2023 by PioneersMTNP. All Rights Reserved.
+			</footer>
+		</div>
+	</body>
+</html>
