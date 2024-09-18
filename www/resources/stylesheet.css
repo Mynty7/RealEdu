@@ -22,7 +22,7 @@ body{
 a:link, a:visited, a:hover, a:active{
 	text-decoration: none;
 }
-#frontboard{
+#frontboard, #frontboard2{
 	font-size: 250%;
 	display: inline-block;
 	background: var(--prm);
@@ -69,16 +69,12 @@ a:link, a:visited, a:hover, a:active{
 	background: var(--hvr);
     color: var(--prm);
 }
-.note{
-	margin: 1%;
-
-}
 .card{
 	display: block;
 	border: 2px solid white;
 	border-radius: 25px;
-	margin-top:10px;
-	padding: 20px;
+	margin: 10px;
+	padding: 10px;
 	color: var(--fnt);
 	font-size: 175%;
 	text-align: center;
@@ -87,12 +83,14 @@ a:link, a:visited, a:hover, a:active{
 	background: var(--prm);
 	font-family: "Balsamiq Sans", cursive;
 }
-.card:hover{
+.myhover:hover{
 	background-color: var(--hvr);
 	color: var(--prm);
 }
-.gallery{
-	text-align: center;
+.notdownload{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .tab{
 	background-color: transparent;
@@ -100,10 +98,11 @@ a:link, a:visited, a:hover, a:active{
 	display: contents;
 }
 .topic{
-	font-size: 145%;
-	border-bottom: 2px solid white;
+	font-size: 155%;
+	border-bottom: none;
 	display: inline-block;
-	margin-bottom: 2%;
+	justify-content: center;
+	padding: 10px;
 }
 .essay{
 	font-size: 150%;
@@ -144,7 +143,7 @@ a:link, a:visited, a:hover, a:active{
 	margin: 2px;
 }
 footer{
-	display: block;
+	display: inline-block;
 	margin: 20px;
 	padding: 20px;
 	text-align: center;
@@ -169,4 +168,68 @@ footer{
 	background: var(--sec);
 	border-radius: 15px;
 	color: var(--fsc);
+}
+#abstract{
+	border: 2px solid white;
+	border-radius: 25px;
+	margin-top:10px;
+	padding: 20px;
+	color: white;
+	font-size: 125%;
+	background-repeat: no-repeat;
+	transition-duration: 1s;
+	background: var(--prm);
+	font-family: "Arial";
+}
+.tab{
+	width: 100%;
+}
+
+.container{
+	text-align: center; 
+}
+
+.pomodoro{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 150%;
+	text-align: center;
+}
+
+.timerbuttons{
+	display: inline-block;
+	background-color: var(--prm);
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	border: 2px var(--prm) ;
+	font-family: inherit;
+}
+
+#rtdisp{
+	display: block;
+	text-align: center;
+	background-color: var(--sec);
+	padding: 20px;
+	border-radius: 25px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	.notdownload{
+		display: block;
+	}
+	.card{
+		font-size: 125%;
+	}
+	#descbar{
+		font-size: 100%;
+	}
+	iframe[src*=youtube]{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
 }
