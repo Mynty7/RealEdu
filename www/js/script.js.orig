@@ -1,4 +1,9 @@
 var language = "en";
+<<<<<<< HEAD:www/js/script.js
+
+//var edulevel = "menu1"
+=======
+>>>>>>> main:www/script.js
 // codebase requires reform
 function additionalmenu(){
 	document.getElementById("inilink2").style.display = "inline-block";

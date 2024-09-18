@@ -11,8 +11,12 @@
 		<link rel="shortcut icon" href="./resources/favicon.png">
 	</head>
 	<body onload="console.log(localStorage.getItem('openmenu')); testopen()">
+<<<<<<< HEAD
+		<script src="js/script.js"></script>
+=======
 		<script src="script.js"></script>
 		<script src="timer.js"></script>
+>>>>>>> main
 		<header>
 			<div class="more">
 				<button id="frontboard" onclick="location.reload();" type="button"> RealEdu </button>

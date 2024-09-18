@@ -23,8 +23,12 @@ body{
 a:link, a:visited, a:hover, a:active{
 	text-decoration: none;
 }
+<<<<<<< HEAD
+#frontboard,.aboutfrontboard{
+=======
 #frontboard, #frontboard2{
 	font-size: 250%;
+>>>>>>> main
 	display: inline-block;
 	background: var(--prm);
 	border: none;
