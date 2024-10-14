@@ -1,4 +1,4 @@
-function startTimer(xMin, xSec, message, buta, butb, pana, panb, panc, pand){
+function startTimer(xMin, xSec, message, buta, butb, pana, panb){//, panc, pand){
 	document.getElementById(buta).style.display = "none";
 	document.getElementById(butb).style.display = "none";
 	document.getElementById(panb).style.display = "none";
@@ -21,8 +21,8 @@ function startTimer(xMin, xSec, message, buta, butb, pana, panb, panc, pand){
 		}else if(xSec == 0 && xMin == 0){
 			document.getElementById("rtdisp").innerText = message;
 			document.getElementById(pana).style.display = "none";
-			document.getElementById(panc).style.display = "none";
-			document.getElementById(pand).style.display = "block";
+			//document.getElementById(panc).style.display = "none";
+			//document.getElementById(pand).style.display = "block";
 			document.getElementById(butb).style.display = "inline-block";
 			//alert(message);
 			clearInterval(timeOut);
